@@ -4,10 +4,16 @@ import { CommonModule } from '@angular/common';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses.component';
 import { MatTableModule } from '@angular/material/table';
-import { MaterialImportsModule } from '../shared/material.imports/material.imports.module';
+import { MaterialImportsModule } from '../shared/components/material.imports/material.imports.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [CoursesComponent],
-  imports: [CommonModule, CoursesRoutingModule, MaterialImportsModule],
+  imports: [
+    CommonModule,
+    CoursesRoutingModule,
+    MaterialImportsModule,
+    SharedModule,
+  ],
 })
 export class CoursesModule {}

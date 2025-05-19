@@ -1,3 +1,24 @@
 table {
   width: 100%;
 }
+.card{
+  border-radius: 20px;
+  padding: 0;
+  margin: 10%;
+}
+.card__toolbar{
+  border-radius: 20px 20px 0 0;
+  justify-content: center;
+}
+.card__table{
+  border-radius: 0 0 20px 20px;
+}
+.card__spinner{
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  border-radius: 0 0 20px 20px;
+
+}
